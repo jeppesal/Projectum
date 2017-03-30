@@ -109,8 +109,8 @@ module powerbi.extensibility.visual {
     const MillisecondsInWeek: number = 4 * MillisecondsInADay;
     const MillisecondsInAMonth: number = 30 * MillisecondsInADay;
     const MillisecondsInAYear: number = 365 * MillisecondsInADay;
-    const ChartLineHeight: number = 40;
-    const PaddingTasks: number = 5;
+    const ChartLineHeight: number = 20;
+    const PaddingTasks: number = 2;
     const numberFormat = "#";
 
     export interface Task extends SelectableDataPoint {
@@ -247,10 +247,10 @@ module powerbi.extensibility.visual {
             AxisTickSize: 6,
             MaxTaskOpacity: 1,
             MinTaskOpacity: 0.4,
-            ProgressBarHeight: 4,
+            ProgressBarHeight: 2,
             ResourceWidth: 100,
             TaskColor: "#00B099",
-            TaskLineWidth: 15,
+            TaskLineWidth: 8,
             DefaultDateType: "Week",
             DateFormatStrings: {
                 Day: "MMM dd",
@@ -266,7 +266,7 @@ module powerbi.extensibility.visual {
         private static AxisLabelClip: number = 20;
         private static AxisLabelStrokeWidth: number = 1;
         private static TaskResourcePadding: number = 4;
-        private static BarHeightMargin: number = 5;
+        private static BarHeightMargin: number = 3;
         private static ChartLineHeightDivider: number = 4;
         private static ResourceWidthPadding: number = 10;
         private static TaskLabelsMarginTop: number = 15;
